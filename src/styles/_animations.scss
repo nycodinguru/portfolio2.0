@@ -1,0 +1,33 @@
+@keyframes fade-in-header-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes fade-up-and-in-general-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes unsaturate {
+    0% {
+        filter: saturate(100%);
+    }
+
+    100% {
+        filter: saturate(0%);
+    }
+}

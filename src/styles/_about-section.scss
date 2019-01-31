@@ -1,0 +1,117 @@
+.About-parent {
+    min-height: 50vh;
+    max-width: 1048px;
+    margin: 0 auto 20vh auto;
+    padding: 5vh 0;
+    background: #fff;
+    z-index: 20;
+    position: relative;
+   
+
+    .About-sub-parent {
+        padding: 150px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 100 !important;
+        background-color: #fff;
+        position: relative;
+        flex-direction: column;
+
+        @include mobile {
+            padding: 0;
+        }
+
+        @include desktop {
+            flex-direction: row;
+        }
+       
+    }
+
+    .Typed-about-header {
+        text-align: center;
+        font-size: 3.2em;
+        z-index: 30;
+        margin-bottom: 100px;
+        font-family: 'Alike', serif;
+        font-weight: normal;
+        color: $nearlyBlack;
+    }
+
+    .Parallax-parent-lower{
+        z-index: 50;
+        position: relative;
+    }
+
+
+    .Parallax-parent-lower{
+        z-index: -10;
+        position: relative;
+    }
+
+    .Upper {
+        color: #fff;
+    }
+
+    .Lower {
+        color: $nearlyBlack;
+    }
+
+    .Headshot {
+        height: 320px;
+        width: 320px;
+        background: url('../assets/images/headshot/headshot.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0%;
+        filter: saturate(0%) contrast(170%);
+        border: solid 5px clear;
+        transition: 0.4s;
+        margin: 35px 0;
+        padding-top: 20px;
+
+        &:hover {
+            transition: 0.4s;
+            filter: saturate(100%) contrast(100%);
+            border: solid 5px clear;
+        }
+    }
+
+    .About-blurb {
+        line-height: 33px;
+        color: $nearlyBlack;
+
+        &::first-letter {
+            font-size: 5em;
+            font-weight: bold;
+        }
+
+        @include mobile {
+            width: 75%;
+            margin: 60px auto 0 auto;
+        }
+
+        @include tablet {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+    }
+
+    .Button-parent {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .Button {
+            width: 100px;
+            margin: 10px;
+        }
+    }
+
+    p {
+        width: 30%;
+        z-index: 10;
+    }
+}

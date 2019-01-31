@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  cursor: pointer;
+  &:link,
+  &:hover,
+  &:visited {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+html,
+#root {
+  height: 100%;
+}
+main{
+  overflow-x: hidden;
+}
+body {
+  height: 100%;
+  display: flex;
+  width: 100vw;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4{
+  cursor: default;
+}
+
+.Button {
+  border: solid black;
+  color: #0f0f0f;
+  padding: 7px 14px;
+  width: max-content;
+  height: max-content;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover{
+    transition: 0.4s;
+    background: black;
+    color: #fff;
+        }
+}
+
+
+.collapse-row-column {
+  display: flex;
+  flex-direction: column;
+
+  @include tabtop {
+    flex-direction: row;
+  }
+  &-tab {
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+}

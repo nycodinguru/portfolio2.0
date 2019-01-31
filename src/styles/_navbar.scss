@@ -1,0 +1,32 @@
+.Navbar-container-parent {
+    opacity: 1;
+    top: 0;
+    height: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0 2rem;
+    
+
+    .Navbar-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        // opacity: 0;
+        // z-index: -1000;
+        justify-content:  space-between;
+
+        // &-scrolled {
+        //     transition: 0.4s;
+        //     z-index: 1000;
+        //     opacity: 1;
+        // }
+
+        #rashad-rose{
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: $nearlyBlack;
+        }
+    }
+}

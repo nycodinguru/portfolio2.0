@@ -1,0 +1,78 @@
+.Footer-parent {
+    background-color: black;
+    color: white;
+    min-height: 8vh;
+    padding: 5px 0;
+    margin-top: 150px;
+
+    @include mobile {
+        min-height: 14vh;
+    }
+
+    .Footer-container {
+        display: flex;
+        align-content: stretch;
+        flex-direction: row;
+        min-height: 8vh;
+        align-items: flex-end;
+
+        @include mobile {
+            min-height: 14vh;
+        }
+        
+
+        .Footer-links {
+            word-spacing: 4px;
+            margin-right: auto;
+            transform: translate(10%, -100%);
+    
+            .Contact-span {
+                font-size: 1rem;
+                font-weight: bold;
+                cursor: pointer !important;
+                transition: 0.4s;
+            }
+
+            .Github:hover {
+                color: #6cc644;
+                transition: 0.4s;
+            }
+
+            .Linkedin:hover {
+                color: #0e76a8;
+                transition: 0.4s;
+            }
+
+            .Stack-overflow:hover {
+                color: #f48024;
+                transition: 0.4s;
+            }
+
+            .Instagram:hover {
+                color: #ff2882;
+                transition: 0.4s;
+            }
+
+            @include mobile {
+                font-size: .9rem;
+                transform: translate(10%, -150%);
+                width: 90%;
+            }
+        }
+
+        .Footer-container-bottom-text {
+            font-size: .8em;
+            letter-spacing: 0em;
+            opacity: .4;
+            transform: translate(-10%, -50%);
+
+            @include mobile {
+                width: 50%;
+            }
+        }
+    }
+    
+    
+
+
+}

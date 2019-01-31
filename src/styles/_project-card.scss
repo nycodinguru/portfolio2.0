@@ -1,0 +1,204 @@
+.Project-section-parent {
+    position: relative;
+    z-index: 0;
+    
+    .Typed-projects-header {
+        text-align: center;
+        font-size: 3.2em;
+        font-family: 'Alike', serif;
+        font-weight: normal;
+
+        @include mobile {
+            transform: translateY(-50%);
+        }
+    }
+
+    .Parallax-parent-header-lower{
+        position: relative;
+        z-index: 10;
+    }
+
+    .Lower {
+        color: #ffffff;
+    }
+
+    .Project-section-container { 
+        background-color: #000;
+        position: relative;
+        z-index: 0;
+
+        .Project-cards-parent {
+            padding: 25vh 0 5vh 0;
+            margin: 0 auto;
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            position: relative;
+            background-color: #000;
+            z-index: 20;
+
+            @include desktop {
+                max-width: 1048px;
+            }
+
+            .Left-animation,
+            .Right-animation {
+                opacity: 0;
+                
+            }
+
+            .Card {
+                width: 430px;
+                position: relative;
+                height: 630px;
+                // border: solid 5px black;
+                padding: 50px 20px;
+                transition: 0.3s;
+                margin-bottom: 90px;    
+                color: #fff;
+                
+
+                .Project-logo {
+                    height: 45%;
+                    background-color: #000;
+
+                    @include mobile {
+                        height: 35%;
+                    }
+                    }
+
+                .Project-title {
+                    margin: 70px 0 0 0;
+                    font-size: 1.3em;
+                    }
+
+                .Tech-stack-parent {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    }
+
+                h4 {
+                    position: absolute;
+                    width: 100%;
+                    left: 5%;
+                    }
+
+                p {
+                    min-height: 200px;
+                    margin: 10px 0;
+                    line-height: 1.3em;
+                    }
+
+                .Buttons-parent {
+                    display: flex;
+                    justify-content: space-evenly;
+                    
+
+                    .Button {
+                        text-decoration: initial;
+                        transition: 0.4s;
+                        font-size: .9em;
+                        border-color: white;
+                        width: 90px;
+                        
+
+                    &:hover{
+                        transition: 0.4s;
+                        background: white;
+                        color: #000;
+                            }
+                        }
+                    }
+
+                @include mobile {
+                    width: 340px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            #aqquua2 {
+                z-index: -1000000 !important;
+                opacity: 0 !important;
+                height: 0 !important;
+            }
+        }
+
+
+        .Tech-stack-logo {
+            background-size: cover;
+            background-position: center;
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            margin: 5px 3px;
+            transition: 0.4s;
+            z-index: 500;
+            filter: invert(100%) !important;
+
+            &:hover {
+                filter: invert(25%) !important;
+                cursor: pointer;
+                transition: 0.4s;
+            }
+        }
+
+        .html5-logo {
+            background-image: url('../assets/images/icons/html5-logo.png');
+        }
+
+        .css-logo {
+            background-image: url('../assets/images/icons/css-logo.png');
+        }
+
+        .javascript-logo {
+            background-image: url('../assets/images/icons/javascript-logo.png');
+        }
+
+        .react-logo {
+            background-image: url('../assets/images/icons/react-logo.png');
+        }
+
+        .postgresql-logo {
+            background-image: url('../assets/images/icons/postgresql-logo.png');
+        }
+
+        .express-js-logo {
+            background-image: url('../assets/images/icons/express-js-logo.png');
+        }
+
+        .sass-logo {
+            background-image: url('../assets/images/icons/sass-logo.png');
+        }
+
+        .ruby-on-rails-logo {
+            background-image: url('../assets/images/icons/ruby-on-rails-logo.png');
+        }
+    }
+
+    .Slide-and-fade-in {
+        transform: translateX(0%) !important;
+        opacity: 1 !important;
+        transition: 1.3s !important;
+        filter: saturate(0%) !important;
+        animation: unsaturate 3.5s ease-in-out 0s 1 none;
+        
+        &:hover {
+            transition: 0.4s !important;
+            filter: saturate(100%) !important;
+            }
+    }
+
+    #reactagram {
+
+        .Buttons-parent {
+
+            @include mobile {
+                margin: 32px 0px;
+            }
+        }
+        
+    }
+
+}
