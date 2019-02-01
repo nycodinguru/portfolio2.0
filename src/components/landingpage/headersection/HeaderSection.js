@@ -29,7 +29,7 @@ const HeaderSection = props => {
             </div>
             <Parallax
             className="Parallax-parent-header-upper"
-            offsetYMax={4000}
+            offsetYMax={9000}
             offsetYMin={-150}
             slowerScrollRate
             tag="figure"
