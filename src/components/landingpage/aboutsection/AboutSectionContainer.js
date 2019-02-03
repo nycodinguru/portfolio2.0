@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import AboutSection from "./AboutSection";
-import headshot from "../../../assets/images/headshot/headshot.jpg";
+import { aboutSectionInfo } from "../../../data/data";
 
 
 export default class AboutContainer extends Component {
  
   render() {
-    const headshot = headshot;
     return (
       <AboutSection 
-        headshot={headshot}
+        info={aboutSectionInfo}
       />
     );
   }

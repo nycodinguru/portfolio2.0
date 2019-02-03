@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles/index.scss';
-import { Switch, Route, Redirect, withRouter } from "react-router-dom";
+import { Switch, Route, withRouter } from "react-router-dom";
 import LandingPage from "./components/landingpage/LandingPageContainer"
 
 class App extends Component {

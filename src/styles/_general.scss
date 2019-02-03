@@ -22,6 +22,7 @@ ul {
 html,
 #root {
   height: 100%;
+  background-color: $darkBlack;
 }
 main{
   overflow-x: hidden;
@@ -30,7 +31,7 @@ body {
   height: 100%;
   display: flex;
   width: 100vw;
-  background: #fff;
+  background: $regularWhite;
 }
 
 h1,
@@ -41,8 +42,8 @@ h4{
 }
 
 .Button {
-  border: solid black;
-  color: #0f0f0f;
+  border: solid $darkBlack;
+  color: $nearlyBlack;
   padding: 7px 14px;
   width: max-content;
   height: max-content;
@@ -52,8 +53,8 @@ h4{
 
   &:hover{
     transition: 0.4s;
-    background: black;
-    color: #fff;
+    background: $darkBlack;
+    color: $regularWhite;
         }
 }
 
@@ -72,3 +73,26 @@ h4{
     }
   }
 }
+
+.tech-stack-logo-label {
+  transform: translate(-37%,-139%);
+  position: fixed;
+  background: $regularWhite;
+  color: $nearlyBlack;
+  padding: 4px 7px;
+  font-size: .8rem;
+  font-weight: bold;
+  width: max-content;
+}
+
+.tech-stack-logo-arrow {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $regularWhite;
+  content: "";
+  transform: translate(0%,-130%);
+}
+

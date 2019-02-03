@@ -17,10 +17,11 @@ const HeaderSection = props => {
                                     "hello, world. 👋"
                                     ]}
                                     typeSpeed={60}
-                                    backSpeed={10}
-                                    startDelay={1600}
-                                    backDelay={1000}
-                                    showCursor={false} 
+                                    backSpeed={30}
+                                    startDelay={2200}
+                                    backDelay={30000}
+                                    showCursor={false}
+                                    loop
                                     >
                             </Typed>
                         </h1>

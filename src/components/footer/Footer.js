@@ -1,8 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-const Footer = props => {
-  const { info } = props;
+
+const Footer = () => {
 
   return (
     <div className="Footer-parent">
@@ -20,9 +19,9 @@ const Footer = props => {
           <span className="Contact-span Stack-overflow">stack overflow </span> 
           </a>
           <span> / </span> 
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          {/* <a href="" rel="noopener noreferrer"> */}
           <span className="Contact-span Instagram">instagram</span> 
-          </a>
+          {/* </a> */}
         </p>
         <div className="Footer-container-bottom-text">
         <p> &copy; 2019, RASHAD ROSE.</p>

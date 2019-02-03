@@ -1,5 +1,6 @@
 .Navbar-container-parent {
-    opacity: 1;
+    opacity: 0;
+    z-index: -1000;
     top: 0;
     height: 0;
     width: 100%;

@@ -1,11 +1,11 @@
 .Project-section-parent {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     
     .Typed-projects-header {
         text-align: center;
         font-size: 3.2em;
-        font-family: 'Alike', serif;
+        @extend .alike;
         font-weight: normal;
 
         @include mobile {
@@ -19,11 +19,11 @@
     }
 
     .Lower {
-        color: #ffffff;
+        color: $regularWhite;
     }
 
     .Project-section-container { 
-        background-color: #000;
+        background-color: $darkBlack;
         position: relative;
         z-index: 0;
 
@@ -35,7 +35,7 @@
             justify-content: space-evenly;
             flex-wrap: wrap;
             position: relative;
-            background-color: #000;
+            background-color: $darkBlack;
             z-index: 20;
 
             @include desktop {
@@ -45,7 +45,6 @@
             .Left-animation,
             .Right-animation {
                 opacity: 0;
-                
             }
 
             .Card {
@@ -55,16 +54,22 @@
                 border: solid 4px black;
                 transition: 0.5s;
                 margin-bottom: 50px;    
-                color: #fff;
+                color: $regularWhite;
+                padding: 25px;
                 
                 &:hover {
-                    border-color: #fff;
+                    border-color: $regularWhite;
                     transition: 0.4s;
+                    background-color: #111111;
+
+                    @include mobile {
+                        background-color: inherit;
+                    }
                 }
 
                 .Project-logo {
                     height: 41%;
-                    background-color: #000;
+                    background-color: $darkBlack;
 
                     @include mobile {
                         height: 35%;
@@ -75,7 +80,7 @@
                 .Project-title {
                     margin: 30px 0 0 15px;
                     font-size: 1.3em;
-                    }
+                }
 
                 .Tech-stack-parent {
                     display: flex;
@@ -86,14 +91,23 @@
                 h4 {
                     position: absolute;
                     width: 100%;
-                    left: 5%;
+                    left: 10%;
+
+                    @include mobile {
+                        left: 4%;
+                    }
+
                 }
 
                 p {
                     min-height: 180px;
                     margin: 20px 5px 0 5px;
                     line-height: 1.3em;
-                    padding: 0 20px;
+                    padding: 0 9px;
+
+                    @include mobile {
+                        padding: 10px;
+                    }
                 }
 
                 .Buttons-parent {
@@ -109,13 +123,13 @@
                         text-decoration: initial;
                         transition: 0.4s;
                         font-size: .9em;
-                        border-color: #fff;
+                        border-color: $regularWhite;
                         width: 90px;
                         
 
                     &:hover{
                         transition: 0.5s;
-                        background: #fff;
+                        background: $regularWhite;
                         color: $nearlyBlack !important;
                             }
                         }
@@ -124,10 +138,12 @@
                 @include mobile {
                     width: 340px;
                     margin-bottom: 50px;
+                    padding: 0;
+                    border: none !important;
                 }
             }
 
-            #aqquua2 {
+            #null {
                 z-index: -1000000 !important;
                 opacity: 0 !important;
                 height: 0 !important;
@@ -143,57 +159,164 @@
             display: inline-block;
             margin: 5px 4px;
             transition: 0.4s;
-            filter: invert(100%) !important;
+            z-index: 100;
 
-            &:hover {
-                filter: invert(25%) !important;
-                cursor: pointer;
-                transition: 0.4s;
+            &:not(:hover) {
+                opacity: 0.7;   
             }
 
-        &:last-child {
-            margin-right: 5%;
-        }
+            &:last-child {
+                margin-right: 5%;
+            }
+
         }
 
         .html5-logo {
             background-image: url('../assets/images/icons/html5-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "HTML 5";
+                }
+        }
+
         }
 
         .css-logo {
             background-image: url('../assets/images/icons/css-logo.png');
+            
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "CSS3";
+                }
+            }
         }
 
         .javascript-logo {
             background-image: url('../assets/images/icons/javascript-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "JavaScript";
+                }
+            }
         }
 
         .react-logo {
             background-image: url('../assets/images/icons/react-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "React.js";
+                }
+            }
         }
 
         .postgresql-logo {
             background-image: url('../assets/images/icons/postgresql-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "PostgreSQL";
+                }
+            }
         }
 
         .express-js-logo {
             background-image: url('../assets/images/icons/express-js-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "Express.js";
+                }
+            }
         }
 
         .sass-logo {
             background-image: url('../assets/images/icons/sass-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "SASS";
+                }
+            }
         }
 
         .ruby-on-rails-logo {
             background-image: url('../assets/images/icons/ruby-on-rails-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "Ruby on Rails";
+                }
+            }
+        }
+
+        .aws-logo {
+            background-image: url('../assets/images/icons/aws-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "Amazon Web Services (AWS)";
+                }
+            }
+        }
+
+        .jquery-logo {
+            background-image: url('../assets/images/icons/jquery-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "jQuery";
+                }
+            }
         }
     }
 
     .Slide-and-fade-in {
-        transform: translateX(0%) !important;
         opacity: 1 !important;
-        transition: 1.3s !important;
-        filter: saturate(0%) !important;
+        transition: .7s !important;
+        filter: saturate(0%);
         animation: unsaturate 3.5s ease-in-out 0s 1 none;
         
         &:hover {
@@ -203,14 +326,37 @@
     }
 
     #reactagram {
-
         .Buttons-parent {
-
             @include mobile {
                 margin: 32px 0px;
             }
         }
         
+    }
+
+    #aqquua {
+        .Buttons-parent {
+
+            a:first-of-type {
+                cursor: default !important;
+
+                &:hover {
+                    cursor: default !important;
+                    pointer-events: none;
+                    color: $regularWhite !important;
+                    background-color: $darkBlack;
+                }
+            }
+
+        
+    }
+
+        &:hover {
+            a:first-of-type {
+                opacity: .2;
+
+            }
+        }
     }
 
 }

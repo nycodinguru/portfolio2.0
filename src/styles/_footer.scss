@@ -3,7 +3,6 @@
     color: white;
     min-height: 8vh;
     padding: 5px 0;
-    margin-top: 150px;
 
     @include mobile {
         min-height: 14vh;
@@ -68,6 +67,7 @@
 
             @include mobile {
                 width: 50%;
+                font-size: .7em;
             }
         }
     }

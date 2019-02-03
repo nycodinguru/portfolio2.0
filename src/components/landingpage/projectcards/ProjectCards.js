@@ -32,8 +32,8 @@ const ProjectCards = props => {
                             </div>         
                         <p key={key+5}>{item.description}</p>
                         <div className="Buttons-parent" key={key+6}>
-                            <a href={item.githubLink} target="_blank" className="Button" key={key+7}>github</a> 
-                            <a href={item.deploymentLink} target="_blank" className="Button" key={key+8}>launch</a>
+                            <a href={`${item.githubLink}`} target="_blank" rel="noopener noreferrer" className="Button" key={key+7}>github</a> 
+                            <a href={`${item.deploymentLink}`} target="_blank" rel="noopener noreferrer" className="Button" key={key+8}>launch</a>
                         </div>   
                     </div>
                 </CardAnimation>
@@ -45,8 +45,8 @@ const ProjectCards = props => {
         <div className="Project-section-parent">
             <Parallax
             className="Parallax-parent-header-lower"
-            offsetYMax={400}
-            offsetYMin={-5}
+            offsetYMax={420}
+            offsetYMin={-100}
             slowerScrollRate
             tag="figure"
             >

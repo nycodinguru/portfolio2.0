@@ -1,16 +1,16 @@
 .Header-section-parent {
-   background-color: #fff;
-   height: 100vh;
+   background-color: $regularWhite;
+   height: 104vh;
    position: relative;
-   z-index: 5;
+   z-index: 100;
 
     .Header-section {
         top: 0;
         position: relative;
         height: 90vh;
         width: 100vw;
-        background-color: #000;
-        color: #fff;
+        background-color: $darkBlack;
+        color: $regularWhite;
 
         a {
             position: absolute;
@@ -19,7 +19,7 @@
             transform: translate(-50%, -50%);
             height: 0;
             transition: 0.4s;
-            background: #000;
+            background: $darkBlack;
 
             &:hover {
                 transition: 0.75s;
@@ -31,18 +31,18 @@
         .Typed-header {
             text-align: center;
             font-size: 4em;
-            border: solid 8px #fff;
+            border: solid 8px $regularWhite;
             padding: 9px 15px;
-            width: 500px;
+            width: 510px;
             height: 110px;
             margin: 0 auto;
-            animation: fade-in-header-animation 1.3s ease-in-out 0s 1 forwards;
+            animation: fade-in-header-animation 2s ease-in-out 0s 1 forwards;
             cursor: pointer;
             transition: 0.4s;
 
             &:hover {
                 color: $nearlyBlack;
-                background: #fff;
+                background: $regularWhite;
             }
 
             @include mobile {
@@ -59,8 +59,8 @@
     .Header-header-upper {
         text-align: center;
         font-size: 3.2em;
-        color: #000;
-        font-family: 'Alike', serif;
+        color: $darkBlack;
+        @extend .alike;
         font-weight: normal;
         transition: 0.3s;
 
