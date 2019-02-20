@@ -14,12 +14,23 @@ const HeaderSection = props => {
                         <h1 className="Typed-header">
                             <Typed 
                                 strings={[
-                                    "hello, world. 👋"
+                                    "hello, world. 👋",
+                                    "hello, world. 👋",
+                                    "hello, world. 👋",
+                                    "click here, or...",
+                                    "scroll down ⬇",
+                                    "scroll down ⬇",
+                                    "scroll down ⬇",
+                                    "scroll down ⬇",
+                                    "scroll down ⬇",
+                                    "scroll down ⬇",
+                                    "scroll down ⬇",
+                                    "scroll down ⬇",
                                     ]}
                                     typeSpeed={60}
-                                    backSpeed={30}
+                                    backSpeed={25}
                                     startDelay={2200}
-                                    backDelay={30000}
+                                    backDelay={1200}
                                     showCursor={false}
                                     loop
                                     >

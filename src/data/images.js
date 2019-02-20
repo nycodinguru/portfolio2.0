@@ -4,6 +4,7 @@ import newsingtonLogo from "../assets/images/project-logos/newsington-logo.jpg";
 import reactagramLogo from "../assets/images/project-logos/reactagram.jpg";
 import wristadvisorLogo from "../assets/images/project-logos/wristadvisor.jpg";
 import aqquuaLogo from "../assets/images/project-logos/aqquua.jpg";
+import zthepro from "../assets/images/project-logos/zthepro.jpg"
 
 
 
@@ -13,7 +14,8 @@ const projectLogos = {
     newsingtonLogo,
     reactagramLogo,
     wristadvisorLogo,
-    aqquuaLogo
+    aqquuaLogo,
+    zthepro
 };
 
 const images = {

@@ -113,6 +113,7 @@
                 .Buttons-parent {
                     display: flex;
                     justify-content: space-evenly;
+                    margin: 15px 0;
 
                     @include mobile {
                         margin: 35px 0 20px 0;
@@ -311,6 +312,34 @@
                 }
             }
         }
+
+        .auth-logo {
+            background-image: url('../assets/images/icons/oauth-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "Auth";
+                }
+            }
+        }
+
+        .firebase-logo {
+            background-image: url('../assets/images/icons/firebase-logo.png');
+
+            &:hover {
+                &::before {
+                    @extend .tech-stack-logo-arrow;
+                }
+                &::after {
+                    @extend .tech-stack-logo-label;
+                    content: "Firebase";
+                }
+            }
+        }
     }
 
     .Slide-and-fade-in {
@@ -334,7 +363,7 @@
         
     }
 
-    #aqquua {
+    #aqquua, #zthepro {
         .Buttons-parent {
 
             a:first-of-type {

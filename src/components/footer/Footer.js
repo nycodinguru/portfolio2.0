@@ -19,9 +19,9 @@ const Footer = () => {
           <span className="Contact-span Stack-overflow">stack overflow </span> 
           </a>
           <span> / </span> 
-          {/* <a href="" rel="noopener noreferrer"> */}
+          <a href="https://www.instagram.com/rozvyyy/" target="_blank" rel="noopener noreferrer">
           <span className="Contact-span Instagram">instagram</span> 
-          {/* </a> */}
+          </a>
         </p>
         <div className="Footer-container-bottom-text">
         <p> &copy; 2019, RASHAD ROSE.</p>

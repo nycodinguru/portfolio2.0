@@ -9,12 +9,22 @@ export const projectData = [
     screenshot: images.projectLogos.aqquuaLogo,
     animationSubClass: "Left-animation",
     githubLink: "",
-    deploymentLink: "http://aqquua.surge.sh/"
+    deploymentLink: "https://aqquua.com/"
+  },
+  {
+    title: "ZTHEPRO",
+    id: "zthepro",
+    techStack: ["javascript-logo", "react-logo", "sass-logo", "firebase-logo"],
+    description: "ZTHEPRO is a musical portfolio built for a professional composer & music producer. It was made with React.js & SASS, and is deployed on Google's Firebase. Much like Aqquua's website, React.js libraries are utilized to trigger animations and other dynamic effects that coincide with the user's interaction with the site.",
+    screenshot: images.projectLogos.zthepro,
+    animationSubClass: "Left-animation",
+    githubLink: "",
+    deploymentLink: "https://zthepro.com/"
   },
   {
     title: "Wristadvisor",
     id: "wristadvisor",
-    techStack: ["html5-logo", "css-logo", "javascript-logo", "postgresql-logo", "ruby-on-rails-logo", "react-logo"],
+    techStack: ["html5-logo", "css-logo", "javascript-logo", "postgresql-logo", "ruby-on-rails-logo", "auth-logo", "react-logo"],
     description: "Wristadvisor is a full-stack project that features an e-commerce website built with React.js on the front-end. However, having just learned Ruby, and Ruby-on-Rails the week prior, I wanted to put my new found knowledge to the test. Thus, I decided not to go with Express.js, so I utilized a Ruby-on-Rails server on the back-end.",
     screenshot: images.projectLogos.wristadvisorLogo,
     animationSubClass: "Right-animation",
@@ -24,7 +34,7 @@ export const projectData = [
   {
     title: "Reactagram",
     id: "reactagram",
-    techStack: ["html5-logo", "css-logo", "javascript-logo", "express-js-logo", "postgresql-logo", "react-logo"],
+    techStack: ["html5-logo", "css-logo", "javascript-logo", "express-js-logo", "postgresql-logo", "auth-logo", "react-logo"],
     description: "As the name suggests, Reactagram was built using React.js. The back-end was developed using Express.js and PostgreSQL, building off of my experience gained from the Newsington app. However, this project was built with a team of three other web developers, of which I was selected to lead and manage version control on GitHub.",
     screenshot: images.projectLogos.reactagramLogo,
     animationSubClass: "Left-animation",
@@ -34,8 +44,8 @@ export const projectData = [
   {
     title: "Newsington News",
     id: "newsington-news",
-    techStack: ["html5-logo", "css-logo", "javascript-logo", "express-js-logo", "postgresql-logo", "jquery-logo"],
-    description: "Newsington is the first full-stack app I developed. It utilizes AJAX calls using jQuery on the front-end, Axios calls using Express.js on the back-end, a PostgreSQL database, and features Auth for user signups, logins, and session tokens.",
+    techStack: ["html5-logo", "css-logo", "javascript-logo", "express-js-logo", "postgresql-logo", "auth-logo", "jquery-logo"],
+    description: "Newsington is the first full-stack app I developed. It utilizes AJAX calls using jQuery on the front-end to fetch and render data from News API in HTML in real time, Axios calls via Express.js on the back-end to interact with the Postgres database, and it even features Auth for user signups, logins, and session tokens.",
     screenshot: images.projectLogos.newsingtonLogo,
     animationSubClass: "Right-animation",
     githubLink: "https://github.com/nycodinguru/newsingstonnews/",
@@ -45,7 +55,7 @@ export const projectData = [
     title: "Snaaake!",
     id: "snaaake",
     techStack: ["html5-logo", "css-logo", "javascript-logo"],
-    description: "Snaaake! was my first foray into making a JavaScript application. Having worked lightly with HTML and CSS in the weeks prior I had to greatly expand my scope of JavaScript's capabilities from displaying the current date and time on a webpage to tracking an object using a 2D array.",
+    description: "Snaaake! was my first foray into making a JavaScript app, and no I didn't use a tutorial. Having worked lightly with HTML and CSS in the weeks prior I had to greatly expand my scope of JavaScript's capabilities from displaying the current date & time via the DOM to tracking and rendering an object in a 2D array using an MVC architecture.",
     screenshot: images.projectLogos.snaaakeLogo,
     animationSubClass: "Left-animation",
     githubLink: "https://github.com/nycodinguru/snaaake",

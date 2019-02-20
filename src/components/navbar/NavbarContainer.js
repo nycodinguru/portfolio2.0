@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import Navbar from "./Navbar";
 
 export default class NavbarContainer extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      className: ""
+    }
+  }  
   
 componentDidMount(){
   window.addEventListener("scroll", this.revealNavbar);
@@ -13,42 +20,24 @@ componentWillUnmount(){
 
 revealNavbar = () => {
 
-  const globalNavbarContainer = document.querySelector('.Navbar-container-parent');
-  const NavbarContainer = document.querySelector('.Navbar-container');
+  const navbarContainerParent = document.querySelector('.Navbar-container-parent');
+  const navbarContainer = document.querySelector('.Navbar-container');
   const portfolioUpperHeader = document.querySelector('.Header-header-upper');
 
   if (window.scrollY >= 130) {
-    portfolioUpperHeader.style =
-      "opacity: 0 !important;";
-  }
-  if (window.scrollY < 130) {
-    portfolioUpperHeader.style =
-      "opacity: 1 !important;";
+    this.setState({ className: "scrolled" });
+    portfolioUpperHeader.classList.add(this.state.className);
   }
   if (window.scrollY >= 200) {
-    portfolioUpperHeader.style =
-      "display: none";
+    navbarContainerParent.classList.add(this.state.className);
+    navbarContainer.classList.add(this.state.className);
+    
   }
   if (window.scrollY < 200) {
-    portfolioUpperHeader.style =
-      "display: block";
-  }
-  if (window.scrollY >= 200) {
-    globalNavbarContainer.style =
-      "transition: 0.3s; height: 4rem; position: fixed; top: 0; z-index: 400; width: 100vw; opacity: 1; background: white;";
-      NavbarContainer.style =
-      "transition: 2.1s; opacity: 1;";
-  }
-  if (window.scrollY < 200) {
-    globalNavbarContainer.style =
-      "transition: 0.3s; height: 0; position: fixed; top: 0; z-index: 400; width: 100vw; opacity: 1; background: white;";
-    NavbarContainer.style =
-      "transition: 0s; opacity: 0;";
+    navbarContainerParent.classList.remove("scrolled");
+    navbarContainer.classList.remove("scrolled");
+    portfolioUpperHeader.classList.remove("scrolled");
   } 
-  if (window.scrollY < 110 ) {
-    globalNavbarContainer.style =
-      "z-index: -1000; transition: 0s; opacity: 0;";
-  }
 }
 
   render() {
