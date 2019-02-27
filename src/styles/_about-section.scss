@@ -60,46 +60,77 @@
         .Lower {
             color: $darkBlack;
         }
+        
+        .Animation-container {
+            opacity: 0;
 
-        .Headshot {
-            height: 320px;
-            width: 320px;
-            background: url('../assets/images/headshot/headshot.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            border-radius: 0%;
-            filter: saturate(0%) contrast(170%);
-            border: solid 5px clear;
-            transition: 0.4s;
-            margin: 35px 0;
-            padding-top: 20px;
+        &.Headshot-animation {
+            filter: saturate(100%) contrast(110%);
+            // animation: unsaturate 3s ease-in-out 0s 1 none;
+            opacity: 1;
+            transition: 0.8s all;
 
-            &:hover {
-                transition: 0.4s;
-                filter: saturate(100%) contrast(100%);
-                border: solid 5px clear;
-            }
+            // &:hover {
+            //     filter: saturate(100%) contrast(110%); 
+            //     transition: 0.2s all; 
+            // }
         }
 
-        .About-blurb {
-            line-height: 33px;
-            color: $nearlyBlack;
+            .Headshot {
+                height: 320px;
+                width: 320px;
+                background: url('../assets/images/headshot/headshot.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                border-radius: 0%;
+                border: solid 5px clear;
+                transition: 0.4s;
+                margin: 35px 0;
+                padding-top: 20px;
+            }    
+        }
 
-            &::first-letter {
-                font-size: 5em;
-                @extend .alike;
-            }
+        .Animation-container {
+           
+            
+        &.About-blurb-width {
+            width: 30%;
 
             @include mobile {
-                width: 75%;
-                margin: 60px auto 0 auto;
+                width: 70%;
             }
 
             @include tablet {
-                width: 50%;
+               width: 50%;
+            }
+        }
+
+        &.About-blurb-animation {
+            animation: slide-in-left 0.9s ease-in-out 0s 1 forwards;
+            transition: 0.8s all;
+            opacity: 1;
+        }
+
+            .About-blurb {
+                line-height: 33px;
                 margin: 0 auto;
-                margin-top: 100px;
+                color: $nearlyBlack;
+                width: 100%;
+
+                &::first-letter {
+                    font-size: 5em;
+                    @extend .alike;
+                }
+
+                @include mobile {
+                    margin: 60px auto 0 auto;
+                }
+
+                @include tablet {
+                    margin: 0 auto;
+                    margin-top: 100px;
+                }
             }
         }
 
@@ -108,9 +139,19 @@
             align-items: center;
             flex-direction: column;
 
-            .Button {
-                width: 100px;
-                margin: 10px;
+            .Animation-container {
+
+            &.Button-animation {
+                animation: slide-up 0.9s ease-in-out 0s 1 forwards;
+                transition: 0.8s all;
+                opacity: 1;
+            }
+
+                .Button {
+                    width: 100px;
+                    margin: 10px;
+                }
+
             }
         }
 

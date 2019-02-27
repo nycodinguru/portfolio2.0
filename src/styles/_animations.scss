@@ -24,10 +24,40 @@
 
 @keyframes unsaturate {
     0% {
-        filter: saturate(100%);
+        filter: saturate(100%) contrast(120%);
     }
 
     100% {
-        filter: saturate(0%);
+        filter: saturate(0%) contrast(120%);
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(-40px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(40px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }

@@ -24,16 +24,16 @@ revealNavbar = () => {
   const navbarContainer = document.querySelector('.Navbar-container');
   const portfolioUpperHeader = document.querySelector('.Header-header-upper');
 
-  if (window.scrollY >= 130) {
+  if (window.scrollY >= 10) {
     this.setState({ className: "scrolled" });
     portfolioUpperHeader.classList.add(this.state.className);
   }
-  if (window.scrollY >= 200) {
+  if (window.scrollY >= 50) {
     navbarContainerParent.classList.add(this.state.className);
     navbarContainer.classList.add(this.state.className);
     
   }
-  if (window.scrollY < 200) {
+  if (window.scrollY < 50) {
     navbarContainerParent.classList.remove("scrolled");
     navbarContainer.classList.remove("scrolled");
     portfolioUpperHeader.classList.remove("scrolled");

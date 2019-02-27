@@ -1,5 +1,5 @@
 .Project-section-parent {
-    position: relative;
+    // position: relative;
     z-index: 10;
     
     .Typed-projects-header {
@@ -42,9 +42,20 @@
                 max-width: 1048px;
             }
 
-            .Left-animation,
-            .Right-animation {
+            .Animation-container {
                 opacity: 0;
+
+                &.Left-animation {
+                    animation: slide-in-left 0.9s ease-in-out 0s 1 forwards;
+                    opacity: 1;
+                    transition: 0.8s all;
+                }
+                &.Right-animation {
+                    animation: slide-in-right 0.9s ease-in-out 0s 1 forwards;
+                    opacity: 1;
+                    transition: 0.8s all;
+                }
+            
             }
 
             .Card {
@@ -60,7 +71,7 @@
                 &:hover {
                     border-color: $regularWhite;
                     transition: 0.4s;
-                    background-color: #111111;
+                    background-color: #161616;
 
                     @include mobile {
                         background-color: inherit;
@@ -68,11 +79,11 @@
                 }
 
                 .Project-logo {
-                    height: 41%;
+                    height: 39%;
                     background-color: $darkBlack;
 
                     @include mobile {
-                        height: 35%;
+                        height: 31%;
                     }
 
                 }
@@ -137,7 +148,7 @@
                     }
 
                 @include mobile {
-                    width: 340px;
+                    width: 330px;
                     margin-bottom: 50px;
                     padding: 0;
                     border: none !important;
@@ -342,18 +353,6 @@
         }
     }
 
-    .Slide-and-fade-in {
-        opacity: 1 !important;
-        transition: .7s !important;
-        filter: saturate(0%);
-        animation: unsaturate 3.5s ease-in-out 0s 1 none;
-        
-        &:hover {
-            transition: 0.4s !important;
-            filter: saturate(100%) !important;
-            }
-    }
-
     #reactagram {
         .Buttons-parent {
             @include mobile {
@@ -363,7 +362,7 @@
         
     }
 
-    #aqquua, #zthepro {
+    #aqquua {
         .Buttons-parent {
 
             a:first-of-type {

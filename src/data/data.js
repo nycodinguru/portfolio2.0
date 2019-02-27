@@ -7,7 +7,7 @@ export const projectData = [
     techStack: ["javascript-logo", "react-logo", "sass-logo", "aws-logo"],
     description: "Aqquua is a commercial aquaculture website built with React.js. The website uses the latest CSS properties for modern styling, prerendering for Search Engine Optimization (SEO), custom-made interactive animations, and transitions built with SASS and JavaScript. At launch, I deployed the website using AWS (Route 53, S3, CloudFront, and Lambda).",
     screenshot: images.projectLogos.aqquuaLogo,
-    animationSubClass: "Left-animation",
+    animationSubClass: "Right-animation",
     githubLink: "",
     deploymentLink: "https://aqquua.com/"
   },
@@ -18,7 +18,7 @@ export const projectData = [
     description: "ZTHEPRO is a musical portfolio built for a professional composer & music producer. It was made with React.js & SASS, and is deployed on Google's Firebase. Much like Aqquua's website, React.js libraries are utilized to trigger animations and other dynamic effects that coincide with the user's interaction with the site.",
     screenshot: images.projectLogos.zthepro,
     animationSubClass: "Left-animation",
-    githubLink: "",
+    githubLink: "https://github.com/nycodinguru/reactproject",
     deploymentLink: "https://zthepro.com/"
   },
   {
@@ -76,6 +76,6 @@ export const projectData = [
 export const aboutSectionInfo = {
   title: "about.",
   resumeLink: "https://resume.creddle.io/resume/awq9dml69ev",
-  linkedinLink: "https://www.linkedin.com/in/rashad-rose/",
+  linkedinLink: "https://www.linkedin.com/in/rashadrose/",
   blurb: "I am a web developer with a background in management and IT. I’m personable, self-motivated and I work well on a team. My time working as a field tech, traveling around the US and the globe, as well as my life-long personal interest in tinkering with tech, have given me a good grasp on people, history, culture, and of bunch of tech-oriented subject matter. I’m an empathetic person with a natural tendency to help others, and I also have a good sense of humor 😄."
 }

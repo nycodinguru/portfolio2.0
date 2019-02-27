@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Typed from 'react-typed';
 import { Parallax } from 'react-scroll-parallax';
 import Scrollchor from 'react-scrollchor';

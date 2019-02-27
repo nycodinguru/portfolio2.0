@@ -2,7 +2,6 @@ import React from "react";
 
 
 const Footer = () => {
-
   return (
     <div className="Footer-parent">
       <div className="Footer-container">
@@ -11,7 +10,7 @@ const Footer = () => {
           <span className="Contact-span Github"> github </span>
           </a> 
           <span> / </span> 
-          <a href="https://www.linkedin.com/in/rashad-rose/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/rashadrose/" target="_blank" rel="noopener noreferrer">
           <span className="Contact-span Linkedin">linkedin </span> 
           </a>
           <span> / </span> 

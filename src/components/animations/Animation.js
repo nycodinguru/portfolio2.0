@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Waypoint from "react-waypoint";
 
-export default class CardAnimation extends Component {
+export default class Animation extends Component {
   constructor() {
     super();
     this.state = {
@@ -14,17 +14,17 @@ export default class CardAnimation extends Component {
         this.setState({
           className: this.props.animationClass ? this.props.animationClass : "animation",
         }),
-      975
+      400
     );
   };
   render() {
     return (
       <Waypoint
       scrollableAncestor={window}
-      bottomOffset={"15%"} 
+      bottomOffset={this.props.bO ? this.props.bO : "15%"} 
       onEnter={this.bounceIn}>
         <div
-          className={`${this.props.animationSubClass} ${
+          className={`Animation-container ${this.props.animationSubClass} ${
             this.state.className
           }`}
         >

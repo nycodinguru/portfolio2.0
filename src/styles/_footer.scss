@@ -3,6 +3,9 @@
     color: white;
     min-height: 8vh;
     padding: 5px 0;
+    width: 100vw;
+    position: relative;
+    z-index: 1000;
 
     @include mobile {
         min-height: 14vh;

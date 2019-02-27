@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import CardAnimation from '../../animations/CardAnimation';
+import Animation from '../../animations/Animation';
 //
 
 const ProjectCards = props => {
@@ -8,9 +8,8 @@ const ProjectCards = props => {
     const cards = props.data.map( (item, key) => {
         return(
             <div key={key+9}>
-                <CardAnimation
-                    animationClass="Slide-and-fade-in"
-                    animationSubClass={item.animationSubClass}
+                <Animation
+                    animationClass={item.animationSubClass}
                 >
             
                     <div key={key} className="Card" id={item.id}>
@@ -36,7 +35,7 @@ const ProjectCards = props => {
                             <a href={`${item.deploymentLink}`} target="_blank" rel="noopener noreferrer" className="Button" key={key+8}>launch</a>
                         </div>   
                     </div>
-                </CardAnimation>
+                </Animation>
             </div>
         )
     });
