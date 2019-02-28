@@ -97,3 +97,35 @@ h4{
   transform: translate(0%,-130%);
 }
 
+.Back-to-top {
+  width: 29px;
+  height: 29px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: -1000;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #fff;
+  transition: 0.4s all;
+  cursor: pointer;
+  background: url('../assets/images/icons/chevron.png');
+  background-position: center;
+  background-size: 35% 50%;
+  background-repeat: no-repeat;
+  background-color: #000;
+  opacity: 0;
+  transform: translateY(30px);
+
+  &.scrolled {
+    opacity: 1;
+    z-index: 100000;
+    transition: 1.1s all;
+    transform: translateY(0);
+
+    &:hover {
+      filter: invert(100);
+      transition: 0.4s all;
+    }
+  }
+}

@@ -14,7 +14,7 @@ export default class Animation extends Component {
         this.setState({
           className: this.props.animationClass ? this.props.animationClass : "animation",
         }),
-      400
+      550
     );
   };
   render() {

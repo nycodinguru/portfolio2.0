@@ -42,13 +42,23 @@
     }
 }
 
-@keyframes slide-in-right {
+@keyframes slide-up-and-left {
     0% {
-        transform: translateX(-40px);
+        transform: translate(20px, 110px);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translate(0);
+    }
+}
+
+@keyframes slide-up-and-right {
+    0% {
+        transform: translate(-20px, 110px);
+    }
+
+    100% {
+        transform: translate(0);
     }
 }
 
