@@ -6,7 +6,9 @@ const BackToTop = () => {
     return(
         <div>
             <Scrollchor to="" animate={{offset: 0, duration: 250}}>
-            <div className="Back-to-top"></div>
+            <div className="Back-to-top">
+                <h5>back to top</h5>
+            </div>
             </Scrollchor>
         </div>
     )

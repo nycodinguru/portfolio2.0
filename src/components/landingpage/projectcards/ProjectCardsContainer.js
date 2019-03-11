@@ -5,11 +5,16 @@ import ProjectCards from "./ProjectCards";
 
 class ProjectCardsContainer extends Component {
   render() {
+
     const data = projectData;
+
     return (
-      <ProjectCards
+      <div className="Projects-container">
+        <ProjectCards
         data={data}
-      />
+         />
+      </div>
+      
     );
   }
 }

@@ -4,6 +4,7 @@
    position: relative;
    z-index: 100;
 
+
     .Header-section {
         top: 0;
         position: relative;
@@ -29,13 +30,13 @@
 
         .Typed-header {
             text-align: center;
-            font-size: 3.9em;
+            font-size: 3.8em;
             border: solid 8px $regularWhite;
             padding: 9px 15px;
-            width: 510px;
+            width: 515px;
             height: 110px;
             margin: 0 auto;
-            animation: fade-in-header-animation 2s ease-in-out 0s 1 forwards;
+            animation: fade-in-header-animation 1.5s ease-out 0s 1 forwards;
             cursor: pointer;
             transition: 0.4s;
 
@@ -72,6 +73,7 @@
 
         @include mobile {
             transform: translateY(-50%);
+            font-size: 3rem;
         }
 
         @include tabtop {

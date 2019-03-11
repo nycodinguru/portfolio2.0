@@ -1,25 +1,25 @@
 .Footer-parent {
     background-color: black;
     color: white;
-    min-height: 8vh;
+    height: 80px;
     padding: 5px 0;
     width: 100vw;
     position: relative;
     z-index: 1000;
 
     @include mobile {
-        min-height: 14vh;
+        padding: 20px 0;
     }
 
     .Footer-container {
         display: flex;
         align-content: stretch;
         flex-direction: row;
-        min-height: 8vh;
+        height: 100%;
         align-items: flex-end;
 
         @include mobile {
-            min-height: 14vh;
+            height: 100px;
         }
         
 
@@ -27,32 +27,69 @@
             word-spacing: 4px;
             margin-right: auto;
             transform: translate(10%, -100%);
+
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                transform: translate(10%, -30%) !important;
+            }
+
+            span {
+                cursor: default;
+                
+            }
     
             .Contact-span {
                 font-size: 1rem;
                 font-weight: bold;
-                cursor: pointer !important;
-                transition: 0.4s;
+                cursor: pointer;
+                transition: 0.4s all;
+                margin-right: 10px;
+                word-spacing: 0px;
+                background: -webkit-linear-gradient(#fff 0%, #fff 100%);
+                background-clip: text;
+                -webkit-text-fill-color: #fff;
+            
+                &::after{
+                    content: ".";
+                }
             }
 
             .Github:hover {
-                color: #6cc644;
-                transition: 0.4s;
+                background: -webkit-linear-gradient(#6cc644 0%, #6cc644 100%);
+                @include footer-link-background;
+
+                &::after {
+                    @include footer-link-background-after ;
+                }
             }
 
             .Linkedin:hover {
-                color: #0e76a8;
-                transition: 0.4s;
+                background: -webkit-linear-gradient(#0e76a8 0%, #0e76a8 100%);
+                @include footer-link-background;
+                
+                &::after {
+                    @include footer-link-background-after ;
+                }
             }
 
-            .Stack-overflow:hover {
-                color: #f48024;
-                transition: 0.4s;
+            .Angel-list:hover {
+                background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+                @include footer-link-background;
+                
+                &::after {
+                    @include footer-link-background-after ;
+                }
             }
 
             .Instagram:hover {
-                color: #ff2882;
-                transition: 0.4s;
+                background: -webkit-linear-gradient(45deg, #ffda75 18%,#ff3a49 43%,#ff3a49 50%,#e518a1 70%,#6634e1 100%);
+                @include footer-link-background;
+                transition: 0.4s all;
+                
+                &::after {
+                    @include footer-link-background-after ;
+                }
             }
 
             @include mobile {
@@ -65,8 +102,9 @@
         .Footer-container-bottom-text {
             font-size: .8em;
             letter-spacing: 0em;
-            opacity: .4;
+            opacity: .5;
             transform: translate(-10%, -50%);
+
 
             @include mobile {
                 width: 50%;
@@ -74,8 +112,5 @@
             }
         }
     }
-    
-    
-
 
 }

@@ -4,14 +4,27 @@
     -webkit-transform: $value;
     transform: $value;
   }
-  @mixin transition($value) {
-    -moz-transition: $value;
-    -o-transition: $value;
-    -webkit-transition: $value;
-    transition: $value;
-  }
-  
-  @mixin mask($value) {
-    -webkit-mask-image: $value;
-    mask-image: $value;   
-  }
+@mixin transition($value) {
+  -moz-transition: $value;
+  -o-transition: $value;
+  -webkit-transition: $value;
+  transition: $value;
+}
+
+@mixin mask($value) {
+  -webkit-mask-image: $value;
+  mask-image: $value;   
+}
+
+@mixin footer-link-background {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+@mixin footer-link-background-after {
+  -webkit-text-fill-color: #fff;
+  color: #fff !important;
+} 
+
+
+

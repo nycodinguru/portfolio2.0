@@ -18,7 +18,7 @@ const AboutSection = props => {
                 </Parallax>
                 <Parallax
                 className="Parallax-parent-lower"
-                offsetYMax={200}
+                offsetYMax={450}
                 offsetYMin={-720}
                 slowerScrollRate
                 tag="figure"
@@ -29,6 +29,7 @@ const AboutSection = props => {
                     <div>
                         <Animation
                         animationClass="Headshot-animation"
+                        timeOutVal={1000}
                         >
                             <div className="Headshot"></div>
                         </Animation>

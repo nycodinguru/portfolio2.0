@@ -8,13 +8,15 @@ export default class Animation extends Component {
       className: ""
     };
   }
+  
   bounceIn = () => {
+    const timeOutVal = this.props.timeOutVal ? this.props.timeOutVal : 500;  
     setTimeout(
       () =>
         this.setState({
           className: this.props.animationClass ? this.props.animationClass : "animation",
         }),
-      550
+        timeOutVal
     );
   };
   render() {

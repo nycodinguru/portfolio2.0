@@ -2,6 +2,7 @@
     background-color: $regularWhite;
     width: 100vw;
     min-height: 50vh;
+   
 
     .About-parent {   
         max-width: 1048px;
@@ -10,7 +11,7 @@
         background: $regularWhite;
         z-index: 20;
         position: relative;
-    
+       
 
         .About-sub-parent {
             padding: 150px 0;
@@ -18,7 +19,6 @@
             align-items: center;
             justify-content: space-evenly;
             z-index: 100 !important;
-            background-color: $regularWhite;
             position: relative;
             flex-direction: column;
 
@@ -40,6 +40,10 @@
             @extend .alike;
             font-weight: normal;
             color: $nearlyBlack;
+
+            @include mobile {
+                font-size: 3rem;
+            }
         }
 
         .Parallax-parent-upper {
@@ -83,8 +87,6 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                border-radius: 0%;
-                border: solid 5px clear;
                 transition: 0.4s;
                 margin: 35px 0;
                 padding-top: 20px;
@@ -108,6 +110,10 @@
 
             @include tablet {
                width: 50%;
+            }
+
+            @include tabtop {
+                width: 50%;
             }
         }
 
@@ -133,8 +139,12 @@
                 }
 
                 @include tablet {
-                    margin: 0 auto;
-                    margin-top: 100px;
+                    margin: 100px auto 0 auto;
+                }
+
+                @include tabtop {
+                    width: 60%;
+                    margin: 100px auto 0 auto;
                 }
             }
         }

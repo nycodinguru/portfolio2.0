@@ -7,17 +7,14 @@ const Footer = () => {
       <div className="Footer-container">
         <p className="Footer-links">
           <a href="https://github.com/nycodinguru" target="_blank" rel="noopener noreferrer">
-          <span className="Contact-span Github"> github </span>
+          <span className="Contact-span Github"> github</span>
           </a> 
-          <span> / </span> 
           <a href="https://www.linkedin.com/in/rashadrose/" target="_blank" rel="noopener noreferrer">
-          <span className="Contact-span Linkedin">linkedin </span> 
+          <span className="Contact-span Linkedin">linkedin</span> 
           </a>
-          <span> / </span> 
-          <a href="https://stackoverflow.com/users/story/9969370" target="_blank" rel="noopener noreferrer">
-          <span className="Contact-span Stack-overflow">stack overflow </span> 
-          </a>
-          <span> / </span> 
+          <a href="https://angel.co/rashad-rose" target="_blank" rel="noopener noreferrer">
+          <span className="Contact-span Angel-list">angel list</span> 
+          </a> 
           <a href="https://www.instagram.com/rozvyyy/" target="_blank" rel="noopener noreferrer">
           <span className="Contact-span Instagram">instagram</span> 
           </a>

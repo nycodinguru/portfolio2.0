@@ -29,7 +29,7 @@ const HeaderSection = props => {
                                     ]}
                                     typeSpeed={60}
                                     backSpeed={25}
-                                    startDelay={2200}
+                                    startDelay={1700}
                                     backDelay={1200}
                                     showCursor={false}
                                     loop

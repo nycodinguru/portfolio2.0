@@ -24,9 +24,6 @@ html,
   height: 100%;
   background-color: $darkBlack;
 }
-main{
-  overflow-x: hidden;
-}
 body {
   height: 100%;
   display: flex;
@@ -44,6 +41,7 @@ h4{
 
 .Button {
   border: solid $darkBlack;
+  border-width: 3px;
   color: $nearlyBlack;
   padding: 7px 14px;
   width: max-content;
@@ -64,15 +62,22 @@ h4{
   display: flex;
   flex-direction: column;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+
   @include tabtop {
+    flex-direction: column;
+  }
+  
+  @include desktop {
     flex-direction: row;
   }
-  &-tab {
-    flex-direction: column;
-    @include desktop {
-      flex-direction: row;
-    }
-  }
+  
 }
 
 .tech-stack-logo-label {
@@ -98,34 +103,53 @@ h4{
 }
 
 .Back-to-top {
-  width: 29px;
-  height: 29px;
+  width: 50px;
+  height: 115px;
   position: fixed;
   bottom: 5%;
-  right: 5%;
+  right: -10px;
   z-index: -1000;
-  text-align: center;
   font-weight: bold;
-  border: 2px solid #fff;
+  border: solid #fff;
+  border-width: 3px;
+  color: #fff;
   transition: 0.4s all;
   cursor: pointer;
-  background: url('../assets/images/icons/chevron.png');
-  background-position: center;
-  background-size: 35% 50%;
-  background-repeat: no-repeat;
   background-color: #000;
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateX(30px);
+
+  h5 {
+    transform: rotate(-90deg);
+    left: -19px;
+    position: relative;
+    top: 48px;
+    text-align: center;
+    font-size: .85rem;
+    width: max-content;
+  }
 
   &.scrolled {
     opacity: 1;
     z-index: 100000;
     transition: 1.1s all;
-    transform: translateY(0);
+    transform: translateX(0);
 
     &:hover {
+      opacity: 1;
       filter: invert(100);
       transition: 0.4s all;
     }
+
+    @include mobile {
+      opacity: .9;
+      right: -15px;
+      transform: translateX(0px) scale(0.7);
+    }
   }
+}
+
+%footer-link-background {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

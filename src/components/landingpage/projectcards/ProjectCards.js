@@ -44,15 +44,15 @@ const ProjectCards = props => {
         <div className="Project-section-parent">
             <Parallax
             className="Parallax-parent-header-lower"
-            offsetYMax={420}
+            offsetYMax={390}
             offsetYMin={-100}
             slowerScrollRate
             tag="figure"
             >
                 <h3 className="Typed-projects-header Lower"> portfolio. </h3> 
             </Parallax>
-            <div className="Project-section-container collapse-row-column " id="Portfolio">
-                <div className="Project-cards-parent"> {cards} </div>
+            <div className="Project-section-container" id="Portfolio">
+                <div className="Project-cards-parent collapse-row-column"> {cards} </div>
             </div>
         </div>
     )

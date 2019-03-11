@@ -10,20 +10,14 @@
     background-color: #fff;
     transition: 0s; 
 
-    // &.not-scrolled {
-        
-    //     height: 0; 
-    //     position: fixed; 
-    //     top: 0; 
-    //     z-index: 400; 
-    // }
-
     &.scrolled {
-        transition: 0.3s; 
-        height: 4rem; 
+        animation: navbar-fade-in 0.5s ease-out 0s 1 forwards;    
         position: fixed; 
         z-index: 400 !important; 
-        opacity: 1 !important;
+    }
+
+    @include mobile {
+        padding: 0 1rem;
     }
     
 
@@ -36,8 +30,7 @@
         
         &.scrolled {
             z-index: 1000;
-            transition: 2.5s;
-            opacity: 1;
+            animation: fade-in 0.7s ease-in-out 0.4s 1 forwards;
         }
 
         #rashad-rose{
