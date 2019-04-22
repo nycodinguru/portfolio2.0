@@ -370,8 +370,25 @@
 
         #reactagram {
             .Buttons-parent {
+                a:nth-of-type(2) {
+                    cursor: default !important;
+
+                    &:hover {
+                        cursor: default !important;
+                        pointer-events: none;
+                        color: $regularWhite !important;
+                        background-color: $darkBlack;
+                    }
+                }
                 @include mobile {
                     margin: 32px 0px;
+                }
+            }
+
+            &:hover {
+                a:nth-of-type(2) {
+                    opacity: .2;
+
                 }
             }
             
@@ -379,7 +396,6 @@
 
         #aqquua {
             .Buttons-parent {
-
                 a:first-of-type {
                     cursor: default !important;
 

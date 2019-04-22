@@ -32,10 +32,10 @@ export const projectData = [
     deploymentLink: "http://wristadvisor.surge.sh/"
   },
   {
-    title: "Reactagram",
+    title: "Reactagram (being revamped)",
     id: "reactagram",
-    techStack: ["html5-logo", "css-logo", "javascript-logo", "express-js-logo", "postgresql-logo", "auth-logo", "react-logo"],
-    description: "As the name suggests, Reactagram was built using React.js. The back-end was developed using Express.js and PostgreSQL, building off of my experience gained from the Newsington app. However, this project was built with a team of three other web developers, of which I was selected to lead and manage version control on GitHub.",
+    techStack: ["html5-logo", "css-logo", "javascript-logo", "ruby-on-rails-logo", "postgresql-logo", "auth-logo", "react-logo"],
+    description: "As of April 2019, this project is being rebuilt from scratch. However, the original version can still be viewed on GitHub.",
     screenshot: images.projectLogos.reactagramLogo,
     animationSubClass: "Left-animation",
     githubLink: "https://github.com/nycodinguru/reactagram/",
