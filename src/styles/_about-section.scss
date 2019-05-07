@@ -42,7 +42,7 @@
             color: $nearlyBlack;
 
             @include mobile {
-                font-size: 3rem;
+                font-size: 2.9rem;
             }
         }
 
@@ -70,14 +70,8 @@
 
         &.Headshot-animation {
             filter: saturate(100%) contrast(110%);
-            // animation: unsaturate 3s ease-in-out 0s 1 none;
             opacity: 1;
             transition: 0.8s all;
-
-            // &:hover {
-            //     filter: saturate(100%) contrast(110%); 
-            //     transition: 0.2s all; 
-            // }
         }
 
             .Headshot {

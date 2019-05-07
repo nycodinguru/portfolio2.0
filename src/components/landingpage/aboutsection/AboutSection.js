@@ -35,6 +35,7 @@ const AboutSection = props => {
                         </Animation>
                         <div className="Button-parent">
                         <Animation
+                        className="Button-parent"
                         animationClass="Button-animation"
                         >
                             <a href={`${props.info.resumeLink}`} target="_blank" rel="noopener noreferrer"><div className="Button">resume</div></a>

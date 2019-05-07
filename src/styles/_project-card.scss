@@ -12,7 +12,7 @@
             scroll-snap-align: start;
 
             @include mobile {
-                font-size: 3rem;
+                font-size: 2.9rem;
                 transform: translateY(-50%);
             }
         }
@@ -369,6 +369,15 @@
         }
 
         #reactagram {
+            .Project-title {
+                span:nth-of-type(2) {
+                    font-style: italic;
+                    font-weight: lighter;
+                    font-size: .8em;
+                    float: right;
+                }
+            }
+
             .Buttons-parent {
                 a:nth-of-type(2) {
                     cursor: default !important;
@@ -388,7 +397,6 @@
             &:hover {
                 a:nth-of-type(2) {
                     opacity: .2;
-
                 }
             }
             
@@ -406,14 +414,11 @@
                         background-color: $darkBlack;
                     }
                 }
-
-            
         }
 
             &:hover {
                 a:first-of-type {
                     opacity: .2;
-
                 }
             }
         }

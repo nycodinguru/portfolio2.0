@@ -2,7 +2,7 @@ import images from "./images";
 
 export const projectData = [
   {
-    title: "aqquua",
+    title: ["aqquua"],
     id: "aqquua",
     techStack: ["javascript-logo", "react-logo", "sass-logo", "aws-logo"],
     description: "Aqquua is a commercial aquaculture website built with React.js. The website uses the latest CSS properties for modern styling, prerendering for Search Engine Optimization (SEO), custom-made interactive animations, and transitions built with SASS and JavaScript. At launch, I deployed the website using AWS (Route 53, S3, CloudFront, and Lambda).",
@@ -12,7 +12,7 @@ export const projectData = [
     deploymentLink: "https://aqquua.com/"
   },
   {
-    title: "ZTHEPRO",
+    title: ["ZTHEPRO"],
     id: "zthepro",
     techStack: ["javascript-logo", "react-logo", "sass-logo", "firebase-logo"],
     description: "ZTHEPRO is a musical portfolio built for a professional composer & music producer. It was made with React.js & SASS, and is deployed on Google's Firebase. Much like Aqquua's website, React.js libraries are utilized to trigger animations and other dynamic effects that coincide with the user's interaction with the site.",
@@ -22,7 +22,7 @@ export const projectData = [
     deploymentLink: "https://zthepro.com/"
   },
   {
-    title: "Wristadvisor",
+    title: ["Wristadvisor"],
     id: "wristadvisor",
     techStack: ["html5-logo", "css-logo", "javascript-logo", "postgresql-logo", "ruby-on-rails-logo", "auth-logo", "react-logo"],
     description: "Wristadvisor is a full-stack project that features an e-commerce website built with React.js on the front-end. However, having just learned Ruby, and Ruby-on-Rails the week prior, I wanted to put my new found knowledge to the test. Thus, I decided not to go with Express.js, so I utilized a Ruby-on-Rails server on the back-end.",
@@ -32,17 +32,17 @@ export const projectData = [
     deploymentLink: "http://wristadvisor.surge.sh/"
   },
   {
-    title: "Reactagram (being revamped)",
+    title: ["Reactagram", "(being revamped)"],
     id: "reactagram",
     techStack: ["html5-logo", "css-logo", "javascript-logo", "ruby-on-rails-logo", "postgresql-logo", "auth-logo", "react-logo"],
-    description: "As of April 2019, this project is being rebuilt from scratch. However, the original version can still be viewed on GitHub.",
+    description: "As of April 2019, this project is being rebuilt from scratch. However, the original codebase can still be viewed on GitHub.",
     screenshot: images.projectLogos.reactagramLogo,
     animationSubClass: "Left-animation",
     githubLink: "https://github.com/nycodinguru/reactagram/",
-    deploymentLink: "http://reactagram-app.surge.sh/"
+    deploymentLink: ""
   },
   {
-    title: "Newsington News",
+    title: ["Newsington News"],
     id: "newsington-news",
     techStack: ["html5-logo", "css-logo", "javascript-logo", "express-js-logo", "postgresql-logo", "auth-logo", "jquery-logo"],
     description: "Newsington is the first full-stack app I developed. It utilizes AJAX calls using jQuery on the front-end to fetch and render data from News API in HTML in real time, Axios calls via Express.js on the back-end to interact with the Postgres database, and it even features Auth for user signups, logins, and session tokens.",
@@ -52,7 +52,7 @@ export const projectData = [
     deploymentLink: "https://newsington-app.herokuapp.com/newsington/"
   },
   {
-    title: "Snaaake!",
+    title: ["Snaaake!"],
     id: "snaaake",
     techStack: ["html5-logo", "css-logo", "javascript-logo"],
     description: "Snaaake! was my first foray into making a JavaScript app, and no I didn't use a tutorial. Having worked lightly with HTML and CSS in the weeks prior I had to greatly expand my scope of JavaScript's capabilities from displaying the current date & time via the DOM to tracking and rendering an object in a 2D array using an MVC architecture.",
@@ -60,17 +60,17 @@ export const projectData = [
     animationSubClass: "Left-animation",
     githubLink: "https://github.com/nycodinguru/snaaake",
     deploymentLink: "https://nycodinguru.github.io/snaaake/"
-  },
-  {
-    title: "null",
-    id: "null",
-    techStack: [""],
-    description: "",
-    screenshot: null,
-    animationSubClass: "",
-    githubLink: "",
-    deploymentLink: ""
-  }  
+  }
+  // {
+  //   title: "null",
+  //   id: "null",
+  //   techStack: [""],
+  //   description: "",
+  //   screenshot: null,
+  //   animationSubClass: "",
+  //   githubLink: "",
+  //   deploymentLink: ""
+  // }  
 ]
 
 export const aboutSectionInfo = {

@@ -10,7 +10,9 @@ const Navbar = props => {
         <Scrollchor to="" animate={{offset: 0, duration: 400}}>
           <div id="rashad-rose">rashad rose.</div>
         </Scrollchor>
-        <a href="mailto:rashadd.rose@gmail.com" target="_top"><div className="Button">contact</div></a>
+        <Scrollchor to="#Contact" animate={{offset: 0, duration: 400}}>
+          <div className="Button">contact</div>
+        </Scrollchor>
       </div>
     </header>
   );

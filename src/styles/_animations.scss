@@ -64,6 +64,16 @@
     }
 }
 
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(-40px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @keyframes slide-up-and-left {
     0% {
         transform: translate(60px, 120px);
@@ -91,5 +101,98 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+
+.Checkmark-container {
+    opacity: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+
+    &.Form-submitted {
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .Checkmark-message {
+        position: relative;
+        text-align: center;
+        font-size: 1.5rem;
+        top: 45%;
+        opacity: 0;
+        font-weight: 300 !important;
+
+        &.animation {
+            opacity: 1;
+            transition: 1.5s all; 
+        }
+    }
+
+
+    .Checkmark {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: $white;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px $blue;
+    position: relative;
+    margin: 0 auto;
+    top: 40%;
+
+    &.animation {
+        animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    }
+    }
+
+    .Checkmark-circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: $blue;
+    fill: none;
+
+    &.animation {
+        animation: stroke .6s $curve forwards;
+    }
+    
+    }
+
+    .Checkmark-check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+
+    &.animation {
+        animation: stroke .3s $curve .8s forwards;
+    }
+    
+    }
+
+    @keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+    }
+
+    @keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+    }
+
+    @keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 100px $blue;
+    }
     }
 }

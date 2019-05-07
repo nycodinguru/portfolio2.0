@@ -20,7 +20,7 @@ const ProjectCards = props => {
                             backgroundPosition: 'center',
                             }} key={key+1}>  
                         </div>
-                        <h3 className="Project-title" key={key+2}>{item.title}</h3>
+                        <h3 className="Project-title" key={key+2}>{item.title.map( (i, key) => <span key={key+20}>{i}</span>)}</h3>
                         <div className="Tech-stack-parent" key={key+3}>
                             <h4 key={key+4}>tech stack</h4>
                             {item.techStack.map( (itemClassName, key) => {
